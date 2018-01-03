@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "material-time-control"
+    "name": "ng5-material-time-control"
   },
   "apps": [
     {
-      "root": "demo",
-      "outDir": "demo-dist",
+      "root": "src",
+      "outDir": "dist",
       "assets": [
         "assets",
         "favicon.ico"
@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "styles.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -54,7 +54,7 @@
     }
   },
   "defaults": {
-    "styleExt": "scss",
+    "styleExt": "css",
     "component": {}
   }
 }

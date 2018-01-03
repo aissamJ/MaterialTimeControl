@@ -1,15 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-
+import { MatCardModule, MatSnackBarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-
-import { MaterialTimeControlModule } from '../../src/material-time-control.module';
-
-import {
-  MatCardModule,
-} from '@angular/material';
+import { MaterialTimeControlModule } from './modules/material-time-control/material-time-control.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +12,14 @@ import {
   ],
   imports: [
     BrowserModule,
+    
     BrowserAnimationsModule,
     MaterialTimeControlModule,
-    MatCardModule
+    MatCardModule,
+    MatSnackBarModule,
+    
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -57,7 +57,7 @@ export class WTimeComponent implements OnInit {
 
     if (this.userTime.hour === 24) {
       return '00';
-    } else if (this.userTime.hour < 12) {
+    } else if (this.userTime.hour < 10) {
       return '0' + String(this.userTime.hour);
     } else {
       return String(this.userTime.hour);
@@ -96,7 +96,6 @@ export class WTimeComponent implements OnInit {
   }
 
   public emituserTimeChange(event) {
-
     this.userTimeChange.emit(this.userTime);
   }
 }
